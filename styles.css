@@ -4,10 +4,19 @@
 .h2{
     color: green;
 }
-.h3{
+.pink{
     color: pink;
     
 }
+
+.textorange{
+    color: orange;
+}
+
+.textblue{
+    color: blue;
+}
+
 #div{
     border: 7px dotted gray;
     padding: 50px;
