@@ -1,0 +1,19 @@
+.h1{
+    color: red;
+}
+.h2{
+    color: green;
+}
+.h3{
+    color: pink;
+    
+}
+#div{
+    border: 7px dotted gray;
+    padding: 50px;
+    margin: 20px;
+}
+.dark{
+    background-color: black;
+    color:white;
+}
