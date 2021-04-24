@@ -1,0 +1,38 @@
+span{
+    color:red;
+}
+.txtcenter{
+    text-align: center;    
+}
+.csshalf{
+    float: left;
+    width: 50%;
+    background-color: greenyellow;
+    box-sizing: border-box; 
+}
+.htmlhalf{  
+    float: left;
+    width: 50%;    
+    background-color: deepskyblue;
+    box-sizing: border-box; 
+}
+.cssimage{
+    width: 50%;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.htmlimage{
+    width: 60%;
+    border-radius: 50%;   
+    box-sizing: border-box; 
+}
+
+@media screen and (max-width: 767px){
+    .csshalf{        
+        width: 100%        
+    }
+    .htmlhalf{
+        width: 100% 
+    }        
+}
+
