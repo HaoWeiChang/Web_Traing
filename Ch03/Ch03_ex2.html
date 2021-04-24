@@ -7,29 +7,27 @@
     <script src="Ch03_ex2.js"></script>
 </head>
 <body>
-    <div>
+    <div class="ex2div">
         <label>
             <h3>姓名</h3>
             <input type="text" id="name"/> 
         </label>
     </div>
-    <div>
+    <div class="ex2div">
         <h3>性別</h3>
         <label>男</label><input type="radio" name="gender" value="male" >
         <label>女</label><input type="radio" name="gender" value="female">
-    </div>
-    <div>
+    </div> 
+    <div class="ex2div">
         <h3>年齡</h3>
         <input type="number" id="age" maxlength=10 oninput="if(value.length>2)value=value.slice(0,2)">
     </div>
-    <div>
+    <div class="ex2div">
         <h3>電話</h3>
         <input type="number" id="phone" oninput="if(value.length>11)value=value.slice(0,11)">
     </div>
-    <div>
+    <div class="ex2div">
         <button id="send">送出</button>
-    </div>
-        
-   
+    </div>      
 </body>
 </html>
