@@ -11,3 +11,12 @@
     color: yellow;
     font-size: 16px;
 }
+h3{
+    margin:0px;
+}
+div{
+    background-color:rgb(85, 119, 211);
+    width: 180px;
+    margin: 0px;
+    padding: 5px;
+}
