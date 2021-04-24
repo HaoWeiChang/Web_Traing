@@ -17,17 +17,19 @@ span{
     box-sizing: border-box; 
 }
 .cssimage{
-    width: 50%;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
     box-sizing: border-box;
 }
 .htmlimage{
-    width: 60%;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;   
     box-sizing: border-box; 
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .csshalf{        
         width: 100%        
     }
