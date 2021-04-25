@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous">
+    </script>
+
+    <title>Ch05</title>
+</head>
+<body> 
+    <script>
+        $('body').empty();
+        var $content = $('<div style="padding:10px"></div>');
+        $content.append(
+            '<div><input id ="title" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter title"></div>',
+            '<div><input id ="body" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter body"></div>',
+            '<div><input id ="userID" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter userID"></div>',
+            '<div><button id="send">送出</button></div>'
+        );
+        $content.find('#send').on('click',function(eventObj){
+            var data = {
+                title:$('#title').val(),
+                body:$('#body').val(),
+                userID:$('#userID').val(),    
+            };
+            $.ajax({
+                method:'POST',
+                url:'https://jsonplaceholder.typicode.com/posts',
+                dataType:'text',
+                data: data,
+                success:function(data,textStatus,jqXHR){console.log(data);$('body').append(data);},
+                error:function(data,textStatus,jqXHR){console.log('error: ');console.log(data);},
+            });
+        });
+        $('body').append($content);
+    </script>
+</body>
+</html>
