@@ -3,17 +3,21 @@ function getID(id){
 }
 window.onload = function(){
     
-    getID('send').addEventListener('click',function(){
-        if (checkgende ===null)
-            {
-                console.log('請選擇性別')
-            }
-        var getallvalue = {    
-            name:getID('name').value,
-            gender:document.querySelector('input[name="gender"]:checked').value,
-            age : getID('age').value,
-            phone :getID('phone').value,
-        }
-        console.log(getallvalue);
+    getID('send').addEventListener('click',function(){        
+        var gendercheck = document.querySelector('input[name=gender]:checked');
+        var namevalue = getID('name').value;
+        var agevalue =getID('age').value;
+        var phonevalue =getID('phone').value
+        
+        if (gendercheck===null || namevalue ==="" || agevalue ==="" || phonevalue ==="")
+        {
+           alert("請輸入完整資料")         
+        }   
+        else{           
+            getID('dataname').innerHTML= namevalue
+            getID('datagender').innerHTML= gendercheck.value
+            getID('dataage').innerHTML= agevalue
+            getID('dataphone').innerHTML= phonevalue
+        }       
     });
 }
