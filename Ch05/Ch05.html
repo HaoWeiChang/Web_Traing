@@ -12,16 +12,12 @@
     <title>Ch05</title>
 </head>
 <body> 
-    <script>
-        $('body').empty();
-        var $content = $('<div style="padding:10px"></div>');
-        $content.append(
-            '<div><input id ="title" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter title"></div>',
-            '<div><input id ="body" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter body"></div>',
-            '<div><input id ="userID" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter userID"></div>',
-            '<div><button id="send">送出</button></div>'
-        );
-        $content.find('#send').on('click',function(eventObj){
+    <div><input id ="title" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter title"></div>
+    <div><input id ="body" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter body"></div>
+    <div><input id ="userID" style = "width:300px;padding:5px;font-size:13pt;"placeholder="Enter userID"></div>
+    <div><button id="send">送出</button></div>'
+    <script>          
+        $('#send').on('click',function(eventObj){
             var data = {
                 title:$('#title').val(),
                 body:$('#body').val(),
@@ -36,7 +32,6 @@
                 error:function(data,textStatus,jqXHR){console.log('error: ');console.log(data);},
             });
         });
-        $('body').append($content);
     </script>
 </body>
 </html>
