@@ -8,14 +8,28 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <!--Ch06.css-->
-        <link rel="stylesheet" href="Ch06.css">
+        <link rel="stylesheet" href="Ch06.css">   
         
     </head>
     <body>
         <div class="container center-block">      
             <Main class="col-md-8 col-xs-12">
                 <div class="playercol">
-                    <img src="./image/youtube-logo.jpg" class="imagecol">
+                    <img src="./image/youtube-logo.jpg">
+                    <div class="hoverShow">
+                        <div class="pull-left">
+                            <button id="pause" class="btn vBtn">Play</button>
+                            <button id="next" class="btn vBtn">Next</button>
+                            <button id="volume" class="btn vBtn">Vol</button>
+                            <span class="time">18:00</span>
+                            <Span class="time"> / </Span>
+                            <span class="time">20:00</span>
+                        </div>
+                        <div class="pull-right">
+                            <button id="Setting" class="btn vBtn">set</button>
+                            <button id="fullscreen" class="btn vBtn">Full</button>
+                        </div> 
+                    </div>
                 </div>
                 <div class="infocol">
                     <header>
@@ -40,7 +54,7 @@
                         </div>
                         <div class="authInfo">
                             <h5 class="wordcol">測試人員</h5>
-                            <h5 class="wordcol"><span>訂閱</span></h5>
+                            <h5 class="wordcol hover"><span>訂閱</span><span>->立即訂閱</span></h5>
                         </div>
                     </div>
                 </div>
