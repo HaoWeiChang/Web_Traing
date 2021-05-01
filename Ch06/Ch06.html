@@ -8,13 +8,17 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <!--Ch06.css-->
-        <link rel="stylesheet" href="Ch06.css">   
-        
+        <link rel="stylesheet" href="Ch06.css"> 
+        <!--JQuery-->  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container center-block">      
             <Main class="col-md-8 col-xs-12">
-                <div class="playercol">
+                <div data-auth="測試人員" data-remark="測試放文字測試放文字測試放文字測試放文字測試放文字測試放文字測試放文字
+                    Testing Text Testing Text Testing Text Testing Text Testing Text
+                    0123456789abcdefghijklmnopqrstuvwxyz" data-viewnum="10,683" data-commentnum="99" 
+                data-title="[測試] 我想做一個 Youtube" data-img="./image/youtube-logo.jpg" class="playercol">
                     <img src="./image/youtube-logo.jpg">
                     <div class="hoverShow">
                         <div class="pull-left">
@@ -37,7 +41,7 @@
                     </header>
                     <div class="viewcol">
                         <div class="viewcount">
-                            <h5>觀看次數：10,683次</h5>
+                            <h5>觀看次數：<span>10,683</span>次</h5>
                         </div>
                         <div class="optioncol">
                             <div class="options">
@@ -45,8 +49,7 @@
                                 <button class="btn btn-default">→ 分享</button>
                                 <button class="btn btn-default">··· 更多</button>
                             </div>
-                        </div>
-                        
+                        </div>                        
                     </div>
                     <div class= "authContainer text-left">
                         <div class="auth">
@@ -54,7 +57,7 @@
                         </div>
                         <div class="authInfo">
                             <h5 class="wordcol">測試人員</h5>
-                            <h5 class="wordcol hover"><span>訂閱</span><span>->立即訂閱</span></h5>
+                            <h5 class="wordcol hover"><span>訂閱</span><span>立即訂閱</span></h5>
                         </div>
                     </div>
                 </div>
@@ -67,7 +70,7 @@
 
                 <div class="Commentcol hidden-sm hidden-xs">
                     <header class="margin:0px">
-                        <h5>留言·99</h5>
+                        <h5>留言·<span>99</span></h5>
                     </header>
                     <div class="selfComment">
                         <img src="./image/youtube-logo-small.png">
@@ -79,72 +82,130 @@
                     </div>
                 </div>
             </Main>
+
             <aside class="col-md-4 col-xs-12">                
                 <header>
                     <h5 style="margin-top: 20px;margin-bottom: 0px;">即將播放</h5>   
                 </header>
                 <div class="asidecol">
-                    <article class="vBox ">
+                    <article data-remark="testforinfo12" data-commentnum="12" class="vBox">
                         <img src="./image/logo1.jpg">
                         <div class="infoContainer">
                             <h4 class="wordcol">[扯]linux唬爛教程</h4>
-                            <h5 class="wordcol">jacyzon</h5>
-                            <h5 class="wordcol">觀看次數 : 50</h5>
+                            <h5 class="wordcol auth">jacyzon</h5>
+                            <h5 class="wordcol viewNum">觀看次數 : <span>50</span></h5>
                         </div>
                     </article>
-                    <article class="vBox ">
+                    <article data-remark="testforinfo123" data-commentnum="123" class="vBox">
                         <img src="./image/logo2.png">
                         <div class="infoContainer">
                             <h4 class="wordcol">[實用]如何學不會AngularJS</h4>
-                            <h5 class="wordcol">jjlin</h5>
-                            <h5 class="wordcol">觀看次數 : 1</h5>
+                            <h5 class="wordcol auth">jjlin</h5>
+                            <h5 class="wordcol viewNum">觀看次數 :<span>1</span></h5>
                         </div>
                     </article>
-                    <article class="vBox ">
+                    <article data-remark="testforinfo152" data-commentnum="152" class="vBox">
                         <img src="./image/logo3.png">
                         <div class="infoContainer">
                             <h4 class="wordcol">[官方]正在更新到Win10...</h4>
-                            <h5 class="wordcol">Davidwind</h5>
-                            <h5 class="wordcol">觀看次數 : 5,456</h5>
+                            <h5 class="wordcol auth">Davidwind</h5>
+                            <h5 class="wordcol viewNum">觀看次數 :<span>5,456</span></h5>
                         </div>
                     </article>
-                    <article class="vBox ">
+                    <article data-remark="testforinfo142" data-commentnum="142" class="vBox">
                         <img src="./image/logo4.png">
                         <div class="infoContainer">
                             <h4 class="wordcol">[好用]Bootstrap教程</h4>
-                            <h5 class="wordcol">Bill Ball</h5>
-                            <h5 class="wordcol">觀看次數 : 58</h5>
+                            <h5 class="wordcol auth">Bill Ball</h5>
+                            <h5 class="wordcol viewNum">觀看次數 :<span>25,021</span></h5>
                         </div>
                     </article>
-                    <article class="vBox ">
+                    <article data-remark="testforinfo612" data-commentnum="612" class="vBox">
                         <img src="./image/logo5.png">
                         <div class="infoContainer">
                             <h4 class="wordcol">[急速]十秒鐘學會Mongodb</h4>
-                            <h5 class="wordcol">Anonymous</h5>
-                            <h5 class="wordcol">觀看次數 : 1,250</h5>
+                            <h5 class="wordcol auth">Anonymous</h5>
+                            <h5 class="wordcol viewNum">觀看次數 :<span>999,999</span></h5>
                         </div>
                     </article>
-                    <article class="vBox ">
+                    <article data-remark="testforinfo712" data-commentnum="712" class="vBox">
                         <img src="./image/logo6.jpg">
                         <div class="infoContainer">
                             <h4 class="wordcol">[探秘]HTML 沒告訴你的五件事</h4>
-                            <h5 class="wordcol">WNSMD</h5>
-                            <h5 class="wordcol">觀看次數 : 50,878</h5>
+                            <h5 class="wordcol auth">WNSMD</h5>
+                            <h5 class="wordcol viewNum">觀看次數 :<span>456,465</span></h5>
                         </div>
                     </article>   
-                    <article class="vBox ">
+                    <article data-remark="testforinfo129" data-commentnum="129" class="vBox">
                         <img src="./image/logo7.jpg">
                         <div class="infoContainer">
                             <h4 class="wordcol">[密技]jQuery 從入門到精通</h4>
-                            <h5 class="wordcol">jQnoob</h5>
-                            <h5 class="wordcol">觀看次數 : 456,465</h5>
+                            <h5 class="wordcol auth">jQnoob</h5>
+                            <h5 class="wordcol viewNum">觀看次數 :<span>666,777</span></h5>
                         </div>
                     </article>   
                 </div>                      
             </aside>
         </div>
 
-        <!-- Standard button -->
-
+    
+        <script>
+            var getVBoxContent = function getVBoxContent(vBox){
+                return{
+                    img:vBox.find('img').attr('src'),
+                    title:vBox.find('h4').html(),
+                    auth:vBox.find('.auth').html(),
+                    viewNum:vBox.find('.viewNum span').html(),
+                    remark:vBox.data('remark'),
+                    commentnum:vBox.data('commentnum'),
+                };
+            };
+            /*建立主畫面資訊的內容清單*/
+            const maintemp={
+                info:$('.playercol'),
+                img:$('.playercol img'),
+                title:$('.infocol h2'),
+                auth:$('.authInfo h5:first-Child'),
+                viewNum:$('.viewcount h5 span'),
+                commentnum:$('.Commentcol span')        
+            };
+            /*轉換為data-*能閱讀的function*/
+            var setDataonMainEle = function setDataonMainEle(maininfo){
+                for(var attr in maininfo){                
+                    var lowercase = attr.toLowerCase();
+                    maintemp.info.data(lowercase,maininfo[attr]);
+                }
+            };            
+            /*當選擇清單影片時動作*/  
+            $('.vBox').click(function(e){               
+                var vBox = $(e.currentTarget);/*Catch點擊影片的currentTarget*/
+                var vBoxInfo =getVBoxContent(vBox);  
+                /*將主畫面資料佔存至此*/    
+                var maininfo={
+                    img: maintemp.info.data('img'),
+                    title:maintemp.info.data('title'),
+                    auth:maintemp.info.data('auth'),
+                    viewNum:maintemp.info.data('viewnum'),
+                    remark:maintemp.info.data('remark'),
+                    commentnum:maintemp.info.data('commentnum'),
+                };            
+                /*將點擊的影片放置主畫面*/                        
+                maintemp.img.attr('src',vBoxInfo.img);
+                maintemp.title.html(vBoxInfo.title);
+                maintemp.auth.html(vBoxInfo.auth);
+                maintemp.viewNum.html(vBoxInfo.viewNum);                
+                $('.infoseccol').empty().append('<p>'+ vBoxInfo.remark.replace(/\n/g,'</p><p>') +'</p>');
+                $('.Commentcol span').empty().append(vBoxInfo.commentnum);                   
+                setDataonMainEle(vBoxInfo); 
+                /*將主畫面資訊放置影片清單*/
+                vBox.find('img').attr('src',maininfo.img);
+                vBox.find('h4').html(maininfo.title);
+                vBox.find('.auth').html(maininfo.auth);
+                vBox.find('.viewNum span').html(maininfo.viewNum);
+                vBox.data('remark',maininfo.remark);
+                vBox.data('viewnum',maininfo.viewNum);
+                vBox.data('commentnum',maininfo.commentnum);                                 
+            });         
+        </script>
     </body>
 </html>

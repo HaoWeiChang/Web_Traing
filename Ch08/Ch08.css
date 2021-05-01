@@ -1,0 +1,9 @@
+.hoverShow{
+    transition: opacity ease 400ms;
+}
+.vBox{
+    transition: transform ease 300ms
+}
+.vBox:hover{
+    transform: scale(1.1);
+}
